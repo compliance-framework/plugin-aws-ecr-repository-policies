@@ -1,0 +1,5 @@
+{
+  "approved_encryption_types": ["KMS"],
+  "required_repository_tags": ["Environment", "Owner"],
+  "required_tag_values": {}
+}
