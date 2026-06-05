@@ -17,7 +17,7 @@ title := "ECR repository must have a lifecycle policy configured"
 description := "Repositories without lifecycle policies accumulate stale images indefinitely, violating asset disposal requirements. A lifecycle policy proves a defined disposal mechanism exists."
 
 risk_templates := [{
-	"name":            "lifecycle_policy_missing",
+	"name":            "ECR repository lifecycle policy is missing",
 	"title":           "ECR repository has no lifecycle policy",
 	"statement":       "Without a lifecycle policy, stale and superseded images accumulate indefinitely, increasing storage cost, expanding the exploitable image surface, and violating asset disposal requirements.",
 	"likelihood_hint": "low",
