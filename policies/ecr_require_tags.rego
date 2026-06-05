@@ -27,7 +27,7 @@ title := "ECR repository must carry all required tags"
 description := "Missing required tags prevent cost attribution, ownership tracing, and lifecycle management of container repositories."
 
 risk_templates := [{
-	"name":            "missing_or_incorrect_required_tags",
+	"name":            "ECR repository required tags are missing or incorrect",
 	"title":           "ECR repository has missing or incorrect required tags",
 	"statement":       "One or more required tags are absent or carry an incorrect value, preventing cost attribution, ownership tracing, and lifecycle management of the repository. Untagged resources cannot be automatically governed by tag-based access control policies or cost allocation rules.",
 	"likelihood_hint": "low",

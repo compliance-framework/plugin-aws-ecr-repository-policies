@@ -25,7 +25,7 @@ title := "ECR repository must have scan-on-push enabled"
 description := "Automatic image scanning on push is required for all production ECR repositories. Without it, newly pushed images are not checked for vulnerabilities."
 
 risk_templates := [{
-	"name":            "scan_on_push_disabled",
+	"name":            "ECR repository scan on push is disabled",
 	"title":           "ECR repository scan-on-push is disabled",
 	"statement":       "Automatic image scanning on push is not enabled, allowing unscanned images to be deployed without any vulnerability check.",
 	"likelihood_hint": "high",

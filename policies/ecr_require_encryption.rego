@@ -21,7 +21,7 @@ title := "ECR repository must use an approved encryption type"
 description := "Repositories must be encrypted with an approved encryption type. The default AES256 (AWS-managed) encryption does not satisfy requirements for customer-managed key control."
 
 risk_templates := [{
-	"name":            "unapproved_encryption_type",
+	"name":            "ECR repository uses an unapproved encryption type",
 	"title":           "ECR repository uses a non-approved encryption type",
 	"statement":       "The repository is not encrypted with an approved key type, reducing protection for stored images and removing the ability to enforce key rotation and access controls via a customer-managed KMS key.",
 	"likelihood_hint": "medium",

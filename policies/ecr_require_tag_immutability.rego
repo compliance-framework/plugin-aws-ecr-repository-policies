@@ -22,7 +22,7 @@ title := "ECR repository must enforce image tag immutability"
 description := "Mutable image tags allow silent overwriting of production references without detection. Immutable tags prevent unauthorised substitution and support deployment validation."
 
 risk_templates := [{
-	"name":            "image_tags_mutable",
+	"name":            "ECR repository image tags are mutable",
 	"title":           "ECR image tags are mutable",
 	"statement":       "Mutable image tags allow silent overwriting of production references, enabling undetected substitution of container images without triggering deployment controls.",
 	"likelihood_hint": "high",

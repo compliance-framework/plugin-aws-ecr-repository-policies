@@ -53,7 +53,7 @@ title := "ECR repository must not grant public access"
 description := "A repository resource policy that grants Allow to Principal \"*\" exposes images to the public internet. Repositories without any policy are private by default and pass this check."
 
 risk_templates := [{
-	"name":            "public_access_granted",
+	"name":            "ECR repository grants public access",
 	"title":           "ECR repository grants public access",
 	"statement":       "A wildcard Allow principal in the repository resource policy exposes container images to the public internet, allowing unauthenticated pull access to proprietary or sensitive image contents.",
 	"likelihood_hint": "critical",
