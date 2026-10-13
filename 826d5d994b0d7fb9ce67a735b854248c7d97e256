@@ -1,2 +1,5 @@
 lisa-design:
 W2-S4-T02: fix errors only (user decision 2026-10-13). The 24 Regal unresolved-reference errors on data.json keys get trailing line-scoped ignores, not a repo .regal/config.yaml (that would replace the shared config CI uses). The 28 Regal warnings are left as they are. release.yml and build-and-upload.yml untouched (W3 replaces them).
+
+lisa-selfreview:
+Pass 1: approve, no findings. Diff is opa fmt 1.14.1 output, 24 trailing regal ignores (one per error site; a spurious one on a risk-template string literal was removed before commit), and the mock-plugin-policies-1 ci.yml verbatim. Behaviour compared on main vs branch: 148 inputs x 4 data variants, non-test keys identical, all 34 tests true on both sides.
