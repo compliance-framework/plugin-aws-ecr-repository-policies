@@ -5,7 +5,7 @@ test_pass_kms if {
 		"resource_type": "ecr-repository",
 		"encryption_type": "KMS",
 	}
-		with data.approved_encryption_types as ["KMS"]
+		with data.approved_encryption_types as ["KMS"] # regal ignore:unresolved-reference
 }
 
 test_fail_aes256_when_kms_required if {
@@ -13,7 +13,7 @@ test_fail_aes256_when_kms_required if {
 		"resource_type": "ecr-repository",
 		"encryption_type": "AES256",
 	}
-		with data.approved_encryption_types as ["KMS"]
+		with data.approved_encryption_types as ["KMS"] # regal ignore:unresolved-reference
 }
 
 test_pass_aes256_when_approved if {
@@ -21,7 +21,7 @@ test_pass_aes256_when_approved if {
 		"resource_type": "ecr-repository",
 		"encryption_type": "AES256",
 	}
-		with data.approved_encryption_types as ["AES256", "KMS"]
+		with data.approved_encryption_types as ["AES256", "KMS"] # regal ignore:unresolved-reference
 }
 
 test_fail_empty_encryption_type if {
@@ -29,7 +29,7 @@ test_fail_empty_encryption_type if {
 		"resource_type": "ecr-repository",
 		"encryption_type": "",
 	}
-		with data.approved_encryption_types as ["KMS"]
+		with data.approved_encryption_types as ["KMS"] # regal ignore:unresolved-reference
 }
 
 test_no_match_image_resource if {
@@ -37,5 +37,5 @@ test_no_match_image_resource if {
 		"resource_type": "ecr-image",
 		"encryption_type": "AES256",
 	}
-		with data.approved_encryption_types as ["KMS"]
+		with data.approved_encryption_types as ["KMS"] # regal ignore:unresolved-reference
 }
