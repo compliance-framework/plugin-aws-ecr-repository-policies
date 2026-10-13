@@ -3,3 +3,6 @@ lisa-design:
 - No version.txt added by hand; release-please adds it in the first release PR (simple type).
 - Callers copied verbatim from mock-plugin-policies-1 with pins moved to v1.5.2; default branch is main.
 - README describes no release process, so it is unchanged.
+
+lisa-selfreview:
+- pass 1: approve, no findings (diff mirrors merged reference plugin-file-attestation-policies#4).
