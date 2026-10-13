@@ -22,7 +22,5 @@ test_no_match_registry_resource if {
 }
 
 test_no_match_image_resource if {
-	count(violation) == 0 with input as {
-		"resource_type": "ecr-image",
-	}
+	count(violation) == 0 with input as {"resource_type": "ecr-image"}
 }
