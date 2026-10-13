@@ -1,0 +1,5 @@
+lisa-design:
+- Manifest seeded at 0.1.0 = releases/latest (v0.1.0, final); its commit 6128a6d is an ancestor of main, so no bootstrap-sha.
+- No version.txt added by hand; release-please adds it in the first release PR (simple type).
+- Callers copied verbatim from mock-plugin-policies-1 with pins moved to v1.5.2; default branch is main.
+- README describes no release process, so it is unchanged.
